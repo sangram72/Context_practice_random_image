@@ -14,7 +14,7 @@ const Body = () => {
     try {
       let response = await fetch(baseurl);
       let res = await response.json();
-      console.log(res);
+      // console.log(res);
       setconimage(res.message);
 
       setloading(false); // Set loading to false once the image is fetched
